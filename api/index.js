@@ -1,5 +1,5 @@
-const app = require('../src/app');
-const sequelize = require("../src/config/db");
+const app = require('../backend/src/app');
+const sequelize = require("../backend/src/config/db");
 
 (async () => {
     try{
