@@ -69,7 +69,3 @@ exports.deleteUser = async (req, res) => {
         res.status(500).json({ message: 'Error deleting user', error: error.message });
     }
 };
-function newFunction() {
-    return require('../services');
-}
-

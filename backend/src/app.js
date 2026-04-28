@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 // 3. Responde a OPTIONS antes de las rutas
-app.options(/(.*)/, cors());
+app.options('*', cors());
 // ... resto de tus rutas
 
 const authRoutes = require('./routes/authRoutes');
