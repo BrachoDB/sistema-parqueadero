@@ -4,33 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Sistema Parqueadero</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>ParkingSystem - Gestión Inteligente de Parqueaderos</title>
+    <meta name="description" content="Optimiza la gestión de tu parqueadero con ParkingSystem. Control en tiempo real, reportes detallados y más.">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/landing.css">
 </head>
 
 <body>
-    <div class="auth-container">
-        <div class="auth-card">
-            <h1 class="auth-title">Bienvenido</h1>
-            <form id="loginForm">
-                <div class="form-group">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" id="email" class="form-input" placeholder="Ingrese su correo electrónico" required>
+    <header id="header">
+        <a href="#" class="logo">
+            <i data-lucide="parking-circle" style="color: var(--primary);"></i>
+            Parking<span>System</span>
+        </a>
+        <a href="login.html" class="btn-login">Iniciar Sesión</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="img/hero.png" alt="Parking Hero">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Bienvenido a <span>ParkingSystem</span></h1>
+                <p>Gestión inteligente y en tiempo real de tu parqueadero. Optimiza tus operaciones, controla ingresos y salidas, y obtén reportes detallados al instante.</p>
+                <div class="hero-btns">
+                    <a href="login.html" class="btn-cta btn-primary">Entrar al Sistema</a>
                 </div>
-                <div class="form-group">
-                    <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section" id="features">
+            <div class="section-header">
+                <h2>Características Principales</h2>
+                <p>Todo lo que necesitas para administrar tu estacionamiento de manera profesional.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="monitor"></i>
+                    </div>
+                    <h3>Control en Tiempo Real</h3>
+                    <p>Visualiza el estado de ocupación de tu parqueadero en un panel interactivo y dinámico.</p>
                 </div>
-                <div id="errorMessage" class="text-danger text-center hidden" style="margin-bottom: 1rem;">
-                    Usuario o contraseña incorrectos
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3>Facturación Automática</h3>
+                    <p>Cálculo preciso de tarifas según el tipo de vehículo y tiempo de estancia sin errores manuales.</p>
                 </div>
-                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-            </form>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="bar-chart-3"></i>
+                    </div>
+                    <h3>Reportes Avanzados</h3>
+                    <p>Genera reportes de ingresos, ocupación y actividad diaria para una mejor toma de decisiones.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="section benefits" id="benefits">
+            <div class="benefits-container">
+                <div class="benefits-image">
+                    <img src="img/hero.png" alt="Dashboard Preview" style="filter: brightness(0.8) hue-rotate(10deg);">
+                </div>
+                <div class="benefits-content">
+                    <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                        <h2>¿Por qué elegir ParkingSystem?</h2>
+                        <p>Diseñado para maximizar la eficiencia y seguridad de tu negocio.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">01</div>
+                        <div class="benefit-text">
+                            <h4>Interfaz Intuitiva</h4>
+                            <p>Fácil de usar para operadores y administradores, reduciendo el tiempo de capacitación.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">02</div>
+                        <div class="benefit-text">
+                            <h4>Gestión de Tarifas</h4>
+                            <p>Configura precios personalizados para autos, motos y camionetas de forma sencilla.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">03</div>
+                        <div class="benefit-text">
+                            <h4>Seguridad de Datos</h4>
+                            <p>Tus registros están seguros y respaldados, permitiendo una trazabilidad total.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="#" class="logo" style="justify-content: center;">
+                <i data-lucide="parking-circle" style="color: var(--primary);"></i>
+                Parking<span>System</span>
+            </a>
         </div>
-    </div>
-    <script type="module" src="js/auth.js"></script>
+        <div class="footer-links">
+            <a href="#features">Características</a>
+            <a href="#benefits">Beneficios</a>
+            <a href="login.html">Login</a>
+        </div>
+        <p class="copyright">&copy; 2026 ParkingSystem. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>

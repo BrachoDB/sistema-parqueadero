@@ -25,10 +25,10 @@ export const api = {
 
             if (response.status === 401 || response.status === 403) {
                 // Token expired or invalid
-                if (!window.location.pathname.includes('index.html')) {
+                if (!window.location.pathname.includes('login.html')) {
                     localStorage.removeItem('token');
                     localStorage.removeItem('role');
-                    window.location.href = 'index.html';
+                    window.location.href = 'login.html';
                 }
             }
 

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function checkAuth() {
     const token = localStorage.getItem('token');
     if (!token) {
-        window.location.href = 'index.html';
+        window.location.href = 'login.html';
         return;
     }
     const userDisplay = document.getElementById('userNameDisplay');
@@ -61,7 +61,7 @@ function setupEventListeners() {
     if (logoutBtn) {
         logoutBtn.addEventListener('click', () => {
             localStorage.clear();
-            window.location.href = 'index.html';
+            window.location.href = 'login.html';
         });
     }
 
